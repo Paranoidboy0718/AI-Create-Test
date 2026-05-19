@@ -8,5 +8,5 @@ vscode+codex+deepseek
 
 ## 效果图
 
-![](C:\Users\22074\Pictures\Screenshots\屏幕截图 2026-05-19 161953.png)
+![运行截图](assets/screenshot.png)
 
