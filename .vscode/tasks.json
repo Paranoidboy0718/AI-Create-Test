@@ -1,0 +1,29 @@
+﻿{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "qmake build",
+            "type": "shell",
+            "command": "D:\\Work\\QT\\5.15.2\\mingw81_64\\bin\\qmake.exe",
+            "args": [
+                "-spec",
+                "win32-g++",
+                "TraeAssistant.pro"
+            ],
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "make",
+            "type": "shell",
+            "command": "mingw32-make.exe",
+            "args": [],
+            "dependsOn": "qmake build",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}

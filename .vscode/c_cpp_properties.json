@@ -1,0 +1,35 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/include",
+                "${workspaceFolder}/build",
+                "D:/Work/QT/5.15.2/mingw81_64/include",
+                "D:/Work/QT/5.15.2/mingw81_64/include/QtWidgets",
+                "D:/Work/QT/5.15.2/mingw81_64/include/QtGui",
+                "D:/Work/QT/5.15.2/mingw81_64/include/QtCore",
+                "D:/Work/QT/5.15.2/mingw81_64/include/QtNetwork",
+                "D:/Work/QT/5.15.2/mingw81_64/include/QtANGLE",
+                "D:/Work/QT/5.15.2/mingw81_64/mkspecs/win32-g++",
+                "D:/Work/QT/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++",
+                "D:/Work/QT/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32",
+                "D:/Work/QT/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward",
+                "D:/Work/QT/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include",
+                "D:/Work/QT/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed",
+                "D:/Work/QT/Tools/mingw810_64/x86_64-w64-mingw32/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "D:\\Work\\QT\\Tools\\mingw810_64\\bin\\gcc.exe",
+            "cStandard": "c17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "windows-gcc-x64"
+        }
+    ],
+    "version": 4
+}

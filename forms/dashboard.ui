@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DashboardWidget</class>
+ <widget class="QWidget" name="DashboardWidget">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>800</width><height>500</height></rect>
+  </property>
+  <layout class="QVBoxLayout" name="mainLayout">
+   <property name="spacing">8</property>
+   <property name="leftMargin">8</property>
+   <property name="topMargin">8</property>
+   <property name="rightMargin">8</property>
+   <property name="bottomMargin">8</property>
+   <item>
+    <layout class="QHBoxLayout" name="cardRow">
+     <property name="spacing">8</property>
+     <item><widget class="GaugeCard" name="cpuCard"/></item>
+     <item><widget class="GaugeCard" name="memCard"/></item>
+     <item><widget class="GaugeCard" name="diskCard"/></item>
+     <item><widget class="GaugeCard" name="netCard"/></item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="chartRow">
+     <property name="spacing">8</property>
+     <item><widget class="TrendChart" name="cpuChart"/></item>
+     <item><widget class="TrendChart" name="netChart"/></item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="bottomRow">
+     <property name="spacing">8</property>
+     <item>
+      <widget class="QWidget" name="processContainer">
+       <layout class="QVBoxLayout" name="procLayout">
+        <property name="leftMargin">0</property>
+        <property name="topMargin">0</property>
+        <property name="rightMargin">0</property>
+        <property name="bottomMargin">0</property>
+        <item>
+         <widget class="QLabel" name="procTitle">
+          <property name="text"><string>进程列表</string></property>
+          <property name="styleSheet" stdset="0">color: #2ecc71; font-size: 12px; font-weight: bold;</property>
+         </widget>
+        </item>
+        <item><widget class="ProcessTable" name="processTable"/></item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="fileContainer">
+       <layout class="QVBoxLayout" name="fileLayout">
+        <property name="leftMargin">0</property>
+        <property name="topMargin">0</property>
+        <property name="rightMargin">0</property>
+        <property name="bottomMargin">0</property>
+        <item>
+         <widget class="QLabel" name="fileTitle">
+          <property name="text"><string>文件监控日志</string></property>
+          <property name="styleSheet" stdset="0">color: #f39c12; font-size: 12px; font-weight: bold;</property>
+         </widget>
+        </item>
+        <item><widget class="FileLogWidget" name="fileLog"/></item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget><class>GaugeCard</class><extends>QFrame</extends><header>ui/gauge_card.h</header></customwidget>
+  <customwidget><class>TrendChart</class><extends>QWidget</extends><header>ui/trend_chart.h</header></customwidget>
+  <customwidget><class>ProcessTable</class><extends>QWidget</extends><header>ui/process_table.h</header></customwidget>
+  <customwidget><class>FileLogWidget</class><extends>QWidget</extends><header>ui/file_log_widget.h</header></customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

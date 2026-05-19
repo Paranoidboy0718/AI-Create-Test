@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch TraeAssistant",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/TraeAssistant.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "D:/Work/QT/Tools/mingw810_64/bin/gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "visualizerFile": "c:\\Users\\22074\\AppData\\Roaming\\Trae CN\\User\\workspaceStorage\\204e4eef8e82f02ddb40035ebcaab957\\tonka3000.qtvsctools\\qt.natvis.xml"
+        }
+    ]
+}
